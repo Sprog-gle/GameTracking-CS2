@@ -101,11 +101,10 @@
  %s%lu (%s0x%lx)\n
  ' ) - 3 G M Q _ c e i w } 
  (%ld unused bits)\n
- (08@HPX`jpQ
+ (08@HPX`j
  (08@HPXb
- (08@HPZpQ
+ (08@HPZ
  (08@HR
- (08@JpQ
  (0X`hpz
  (Dirty Animation)
  (Disabled on Server)
@@ -125,7 +124,6 @@
  -8CKV
  -> %s '%s'\n
  -> Could not find an item definition named '%s'\n
- .0yT
  0@NYa
  0Fa
  1CSc\t
@@ -158,7 +156,6 @@
  [via entity lump b/c no save data for '%s' - first visit to map]
  \n\vbounds_maxs
  \n\vbounds_mins
- \n\vpunch_angle
  \n\vtranslation
  \n\vview_angles
  ^LXjt
@@ -1893,7 +1890,6 @@ $tH@T\tI
 (\v2\v.CEntityMsg"g\n
 (\v2\v.CMsgQAngle"#\n
 (\v2\v.CMsgQAngle"J\n CCSUsrMsg_RecurringMissionSchema
-(\v2\v.CMsgQAngle*?\n
 (\v2\v.CMsgVector"
 (\v2\v.CMsgVector"1\n
 (\v2\v.CMsgVector"B\n
@@ -2023,6 +2019,7 @@ $tH@T\tI
 *DEAD*
 *DEAD*(TEAM)
 *DISABLED*
+*H4O
 *I?Value@Int32@v8@@QEBAHXZ
 *J\n\tQuestType
 *UlS
@@ -3922,7 +3919,6 @@ $tH@T\tI
 .?AV?$CNetworkVarBase@MVNetworkVar_m_TextureScale@CRopeKeyframe@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_Weight@CColorCorrectionVolume@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_Width@CRopeKeyframe@@@@
-.?AV?$CNetworkVarBase@MVNetworkVar_m_aimPunchTickFraction@CCSPlayerPawn@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_angle@CFish@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_angularDamping@CTriggerPhysics@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_angularLimit@CTriggerPhysics@@@@
@@ -4232,6 +4228,7 @@ $tH@T\tI
 .?AV?$CNetworkVarBase@MVNetworkVar_m_linearForce@CTriggerPhysics@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_linearLimit@CTriggerPhysics@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_nFireLifetime@CInferno@@@@
+.?AV?$CNetworkVarBase@MVNetworkVar_m_predictableBaseTickInterpAmount@CCSPlayer_AimPunchServices@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_timeUntilNextPhaseStarts@CCSGameRules@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_timescale@CountdownTimer@@@@
 .?AV?$CNetworkVarBase@MVNetworkVar_m_waterLevel@CFish@@@@
@@ -4445,7 +4442,6 @@ $tH@T\tI
 .?AV?$CNetworkVarBase@VColor@@VNetworkVar_m_TintColor@CEnvVolumetricFogController@@@@
 .?AV?$CNetworkVarBase@VColor@@VNetworkVar_m_TintColor@CEnvVolumetricFogVolume@@@@
 .?AV?$CNetworkVarBase@VColor@@VNetworkVar_m_fogColor@CGradientFog@@@@
-.?AV?$CNetworkVarBase@VGameTick_t@@VNetworkVar_m_aimPunchTickBase@CCSPlayerPawn@@@@
 .?AV?$CNetworkVarBase@VGameTick_t@@VNetworkVar_m_nCsViewPunchAngleTick@CPlayer_CameraServices@@@@
 .?AV?$CNetworkVarBase@VGameTick_t@@VNetworkVar_m_nDeployTick@CCSWeaponBase@@@@
 .?AV?$CNetworkVarBase@VGameTick_t@@VNetworkVar_m_nDropTick@CCSWeaponBase@@@@
@@ -4459,6 +4455,8 @@ $tH@T\tI
 .?AV?$CNetworkVarBase@VGameTick_t@@VNetworkVar_m_nNextThinkTick@CBaseEntity@@@@
 .?AV?$CNetworkVarBase@VGameTick_t@@VNetworkVar_m_nPostponeFireReadyTicks@CCSWeaponBase@@@@
 .?AV?$CNetworkVarBase@VGameTick_t@@VNetworkVar_m_nTransitionStartTick@CFuncConveyor@@@@
+.?AV?$CNetworkVarBase@VGameTick_t@@VNetworkVar_m_predictableBaseTick@CCSPlayer_AimPunchServices@@@@
+.?AV?$CNetworkVarBase@VGameTick_t@@VNetworkVar_m_unpredictableBaseTick@CCSPlayer_AimPunchServices@@@@
 .?AV?$CNetworkVarBase@VGameTime_t@@VNetworkVar_lerptime@fogparams_t@@@@
 .?AV?$CNetworkVarBase@VGameTime_t@@VNetworkVar_m_fArmedTime@CC4@@@@
 .?AV?$CNetworkVarBase@VGameTime_t@@VNetworkVar_m_fDropTime@CBaseCSGrenade@@@@
@@ -4514,9 +4512,10 @@ $tH@T\tI
 .?AV?$CNetworkVarBase@VHSequence@@VNetworkVar_m_hSequence@CBaseAnimGraphController@@@@
 .?AV?$CNetworkVarBase@VHSequence@@VNetworkVar_m_hSequence@CNetworkedSequenceOperation@@@@
 .?AV?$CNetworkVarBase@VModelConfigHandle_t@@VNetworkVar_m_Handle@ActiveModelConfig_t@@@@
-.?AV?$CNetworkVarBase@VQAngle@@VNetworkVar_m_aimPunchAngle@CCSPlayerPawn@@@@
-.?AV?$CNetworkVarBase@VQAngle@@VNetworkVar_m_aimPunchAngleVel@CCSPlayerPawn@@@@
+.?AV?$CNetworkVarBase@VQAngle@@VNetworkVar_m_predictableBaseAngle@CCSPlayer_AimPunchServices@@@@
+.?AV?$CNetworkVarBase@VQAngle@@VNetworkVar_m_predictableBaseAngleVel@CCSPlayer_AimPunchServices@@@@
 .?AV?$CNetworkVarBase@VQAngle@@VNetworkVar_m_qDeathEyeAngles@CCSPlayerPawn@@@@
+.?AV?$CNetworkVarBase@VQAngle@@VNetworkVar_m_unpredictableBaseAngle@CCSPlayer_AimPunchServices@@@@
 .?AV?$CNetworkVarBase@VQAngle@@VNetworkVar_m_vPrecomputedOBBAngles0@CBarnLight@@@@
 .?AV?$CNetworkVarBase@VQAngle@@VNetworkVar_m_vPrecomputedOBBAngles1@CBarnLight@@@@
 .?AV?$CNetworkVarBase@VQAngle@@VNetworkVar_m_vPrecomputedOBBAngles2@CBarnLight@@@@
@@ -5937,6 +5936,7 @@ $tH@T\tI
 .?AVCCSPlayerStateWelcome@@
 .?AVCCSPlayerTakeDamageListenerEnemiesCount@@
 .?AVCCSPlayer_ActionTrackingServices@@
+.?AVCCSPlayer_AimPunchServices@@
 .?AVCCSPlayer_BulletServices@@
 .?AVCCSPlayer_BuyServices@@
 .?AVCCSPlayer_CameraServices@@
@@ -5951,7 +5951,6 @@ $tH@T\tI
 .?AVCCSPlayer_WeaponServices@@
 .?AVCCSPointPulseSystem@@
 .?AVCCSPointScriptEntity@@
-.?AVCCSPredictionEvent_AddAimPunch@@
 .?AVCCSPredictionEvent_DamageTag@@
 .?AVCCSPredictionEvent_DamageTag_t@@
 .?AVCCSScriptSystem@@
@@ -8498,6 +8497,7 @@ $tH@T\tI
 .PEAVCCSPlayerController_InGameMoneyServices@@
 .PEAVCCSPlayerController_InventoryServices@@
 .PEAVCCSPlayer_ActionTrackingServices@@
+.PEAVCCSPlayer_AimPunchServices@@
 .PEAVCCSPlayer_BulletServices@@
 .PEAVCCSPlayer_BuyServices@@
 .PEAVCCSPlayer_HostageServices@@
@@ -8523,7 +8523,6 @@ $tH@T\tI
 .PlayerRankingInfo
 .PlayerRankingInfo"L\n3CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate
 .PlayerRankingInfo.PerMapRank
-.PsT
 .Q.Ol
 .ScoreLeaderboardData
 .ScoreLeaderboardData"S\n%CCSUsrMsg_PlayerDecalDigitalSignature
@@ -8854,20 +8853,16 @@ $tH@T\tI
 0123456789
 02V8[
 05=k
-08@HRpQ
+08@HR
 08@J
-08BpQ
 08bX
 09,h
 0;Q5[
 0<cz
 0@NX^b!/@P\b
 0AOY_c"2CQ[c
-0HYO
-0LAO
 0M2~@p
 0Mc\t\n
-0ThO
 0W/5
 0Z@q
 0\n+k_EGCItemCustomizationNotification_NameItem
@@ -8951,6 +8946,7 @@ $tH@T\tI
 2:3maJ
 2:pS
 2?MakeWeak@api_internal@v8@@YAXPEA_KPEAXP6AXAEBV?$WeakCallbackInfo@X@2@@ZW4WeakCallbackType@2@@Z
+2H4O
 2I y)
 2Tm=#
 2Uiwp"9
@@ -8973,7 +8969,6 @@ $tH@T\tI
 2\n.eRollType
 2\n\nline_items
 2\rlhp
-2\vpThO
 2^pV
 2a"l
 2bT~
@@ -9102,8 +9097,8 @@ $tH@T\tI
 6-zeZ
 62$|S)6f
 64CK\vH
-6666666666666666
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
+6666666666666666p
 67-s
 6H,N
 6O|T%
@@ -9129,7 +9124,6 @@ $tH@T\tI
 6l13
 6lkc
 6myY;
-6p\vU
 6qo~
 6r-m_v
 6r1ij
@@ -9143,7 +9137,6 @@ $tH@T\tI
 7?7E7I7O7]7a7u7
 7??SetInternalField@Object@v8@@QEAAXHV?$Local@VData@v8@@@2@@Z
 7?XEAVn
-7CLightEnvironmentEntity
 7GK2
 7GNW^c-<ER]c"09IYc
 7HOX_c.5AQ[c#(4FWc
@@ -9176,9 +9169,8 @@ $tH@T\tI
 8<pl
 8= zp
 8??SetInternalFieldCount@ObjectTemplate@v8@@QEAAXH@Z
-8@JpQ
 8A6j
-8BpQ
+8F0\rU
 8GZS
 8SIffK5W
 8TZvrv<
@@ -9189,7 +9181,6 @@ $tH@T\tI
 8\n3k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo
 8\n4GAME_PARTICLE_MANAGER_EVENT_CLEAR_MODELLIST_OVERRIDE
 8\n\nPlayerMask
-8\npQ
 8\v8!83858A8G8K8S8W8_8e8o8q8}8
 8]Vc2
 8ca1
@@ -9425,14 +9416,13 @@ $tH@T\tI
 ?gwL
 ?jOb
 ?m_Stops
-?phys_pulleyconstraint
+?phys_hinge
 ?srJO
 ?tya
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
 @0pp
-@2pQ
 @333
 @333?
 @33s@
@@ -9440,8 +9430,8 @@ $tH@T\tI
 @Aff
 @BH]f
 @BoneSetup
-@CCSPlayer_RadioServices
-@HPX`hv0
+@CWeaponCZ75a
+@HPX`hvp
 @MfKZ
 @Pgl
 @Pu\rm
@@ -9457,9 +9447,10 @@ $tH@T\tI
 @dKb]
 @fff>fff>fff>fff>
 @i1V
-@m_bSequenceInProgress
 @n2w
+@observer
 @player_start_teleport_destination
+@vote_controller
 @workshop
 A CT bot doesn't know what to do while the bomb is planted!\n
 A Hiding Spot is off of the Nav Mesh at setpos %.0f %.0f %.0f\n
@@ -10029,6 +10020,7 @@ BAddToMessage
 BAsyncSend
 BAsyncSendProto
 BC (default)
+BCPulseGraphInstance_ServerEntity::GraphStart
 BDraw the hiding spot the bot will check next.
 BEOS_BIND_FUNC
 BEOS_BIND_VAR
@@ -10137,10 +10129,10 @@ BOOSTS
 BOUNDARY
 BPE_Diagnostic
 BPE_StringCommand
+BPrints the current mapgroup and the contained maps
 BREAKABLE
 BRouteMsgToJob
 BT5f
-BTEFirebullets_GameEvent_t
 BT_ACTION_MOVETO_FASTEST_ROUTE
 BT_ACTION_MOVETO_RUN
 BT_ACTION_MOVETO_SAFEST_ROUTE
@@ -10175,7 +10167,7 @@ BULLET_PLAYER_762MM
 BULLET_PLAYER_9MM
 BULLET_PLAYER_BUCKSHOT
 BURN
-BWeaponPurchaseCount_t
+BWeaponPurchaseTracker_t
 BY_FILE_CTRL
 BY_Lq)
 BYield
@@ -10279,6 +10271,7 @@ Bloodlvl3
 Bloodlvl4
 Bloodlvl5
 Bloodlvl6
+Bm_hCarriedHostage
 BoX5
 Body Component Scriptdesc
 BodyGameSystem
@@ -10784,6 +10777,7 @@ CCSPlayerPawn_Minimal_server
 CCSPlayerResourceResourceThink
 CCSPlayerWeaponTimingGraph::RunTick
 CCSPlayer_ActionTrackingServices *
+CCSPlayer_AimPunchServices *
 CCSPlayer_BulletServices *
 CCSPlayer_BuyServices *
 CCSPlayer_HostageServices *
@@ -10801,7 +10795,6 @@ CCSPointPulseAPI::OnRoundEnd
 CCSPointPulseAPI::OnRoundFreezeEnd
 CCSPointPulseAPI::OnRoundStart
 CCSPointPulseSystem
-CCSPredictionEvent_AddAimPunch
 CCSPredictionEvent_DamageTag
 CCSScriptSystem
 CCSUsrMsgPreMatchSayText
@@ -11921,7 +11914,6 @@ CPulseFuncs_GameParticleManager::SetEffectControlTransform
 CPulseFuncs_GameParticleManager::SetEffectControlVector
 CPulseFuncs_GameParticleManager::SetEffectControlWorldVector
 CPulseGraphInstance_ServerEntity::BeforeGraphStart
-CPulseGraphInstance_ServerEntity::GraphStart
 CPulseGraphInstance_ServerEntity::InitialActivate
 CPulseGraphInstance_ServerEntity::SetNextThink
 CPulseGraphInstance_ServerEntity::Think
@@ -12162,7 +12154,6 @@ CSOQuestProgress
 CSOVolatileItemClaimedRewards
 CSOVolatileItemOffer
 CSObserverPawn
-CSPE_AddAimPunch
 CSPE_DamageTag
 CSPName
 CSPlayerController
@@ -14618,7 +14609,6 @@ F\n ParticleFreezeTransitionOverride
 F\n\finventories2
 F\n\finventories3
 F\n\rroundstatsall
-F\npQ
 F\rH'4
 Face %s
 Face Actor
@@ -15561,7 +15551,6 @@ HARD
 HAS_LADDERS
 HB@T\tJ
 HBJ\nTRF
-HBnpcsolve_path_lookahead_const
 HDR Color Scale: %0.3f
 HEAD
 HEAD 
@@ -18185,8 +18174,8 @@ P-521
 P08@J
 P08J
 P1\t98"
-P2pQ
 P5[1
+P60'U
 PAGN_4
 PARALYZE
 PARAMETER NAME: %s | OPTIONAL: %s, TYPE: %s, BOUND: %s\n
@@ -18248,7 +18237,6 @@ PEM_write_bio
 PEvent
 PGr]
 PHAG2
-PHYO
 PHYSGUN
 PHYS_SAVE_RESTORE_VERSION
 PHhn}Y
@@ -18367,7 +18355,6 @@ PKEY_SET_TYPE
 PKEY_USAGE_PERIOD
 PKIX
 PLANT_BOMB
-PLAO
 PLASMA
 PLAYERS
 PLUG_TYPE_INPUT
@@ -18524,7 +18511,6 @@ PinnedDown
 Pistol
 PitchShift
 PivotPaint
-PjpQ
 Place
 PlaceDecalEvent_t
 Plant bomb on floor
@@ -18976,9 +18962,8 @@ RSA_verify
 RSA_verify_ASN1_OCTET_STRING
 RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
-RSDSE;2M
+RSDS}
 RTime32
-R\fpThO
 R\r1>Vp
 R\vp!y
 R]Di
@@ -20760,6 +20745,7 @@ TEDust_GameEvent_t
 TEEffectDispatch_GameEvent_t
 TEEnergySplash_GameEvent_t
 TEExplosion_GameEvent_t
+TEFirebullets_GameEvent_t
 TEFizz_GameEvent_t
 TEGlowSprite_GameEvent_t
 TEImpact_GameEvent_t
@@ -21427,7 +21413,7 @@ VNotify Abandoned (Not enabled)\n
 VNotify Sent\n
 VNotify StartProcess failed!\n
 VNotify: %s\n
-VPyT
+VP!U
 VR_HAND_HAPTIC_PULSE_LIGHT
 VR_HAND_HAPTIC_PULSE_MEDIUM
 VR_HAND_HAPTIC_PULSE_STRONG
@@ -21895,7 +21881,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\n\vLoadoutItem
 X\tQo
-X`hrpQ
+X`hr
 Xd3h
 XfJ7
 XjfR
@@ -22259,8 +22245,6 @@ Z~wl
 \f]ne3
 \fdhWTh
 \fiaR
-\fp\v`LAO
-\fp\v`ThO
 \ful2
 \fy&3Gl
 \l:ArR
@@ -22345,7 +22329,7 @@ Z~wl
 \n========================================\n
 \nDictionary: %s\n
 \nGameTick_t
-\nPHYO
+\nH4O
 \nSimulating Entities:\n\n
 \nVisMon: Polling now. (Frequency: %f)\n
 \n\fBPE_Teleport
@@ -22909,7 +22893,6 @@ Z~wl
 \r!\r+\r-\r=\r?\rO\rU\ri\ry\r
 \r@h!Aq8
 \rB6uZ
-\rH9t
 \rKT8v
 \rLAM
 \rMinghuaQu\f
@@ -22953,7 +22936,6 @@ Z~wl
 \tJm_9
 \tLa0+
 \tNone\n
-\tPLAO
 \tPrivate script scope:
 \tPublic script scope:
 \tRead %s\t%s%s%s,\tOffs 0x%04x\n
@@ -23004,14 +22986,11 @@ Z~wl
 \vGt5
 \vHCK/
 \vNCE\v
-\vPLAO
 \vUY6[E
 \v\n\tRemoveFan
 \v\vTSG
-\v`LAO
 \vj0k
 \vjC7
-\vpThO
 ] Done (%.2f seconds)
 ]1h=bfz
 ]FhSD}
@@ -23086,21 +23065,15 @@ _var
 _xU`u
 _}eOk
 `28)fk
-`2pQ
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
 `:zQF
 `D$daM-l
 `DZG
 `F?ToLocalEmpty@api_internal@v8@@YAXXZ
 `H(hqA1p
-`HYO
 `ITS
-`LAO
-`ThO
 `VX:H
 `\n\rvector_values
-`bpQ
-`dpQ
 `fPw.\vM
 `h9T~
 `o_je
@@ -24564,6 +24537,7 @@ constraint_type
 consumed_server_angle_changes
 cont [ %d ]
 contactshadow
+contains
 contains_patches_representing_organizations
 contains_stickers_autographed_by_proplayers
 contains_stickers_representing_organizations
@@ -26580,6 +26554,7 @@ got next proto without seeing extension
 gpGlocals->curtime() called while IsInSimulation() is false\n
 gpGlocals->rendertime() called while IsInSimulation() is true\n
 gp\r3
+gpucullskybox
 grabbable
 gradientfogtexture
 graffiti_tints
@@ -29010,7 +28985,6 @@ move
 move_crc
 move_crouch_amount
 move_direction_id
-move_is_stutter_step
 move_is_walking
 move_keyframed
 move_mode
@@ -29418,7 +29392,6 @@ notifyforcemintime_z
 notmostrecent
 notsolid
 nova
-np\tU
 npc_ability_name
 npc_select %i
 npc_vehicle
@@ -29494,7 +29467,6 @@ objsign
 obs_mode
 observable_listeners
 observable_scope
-observer
 observer pawn
 observer.ventr
 observer_cursors
@@ -29682,9 +29654,8 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p0j0
+p0jp
 p250
-p2pQ
 p2{l
 p4Z3
 p5Z3
@@ -29718,7 +29689,6 @@ pFilter
 pG_*h
 pIp 
 pJointName
-pLAO
 pLocationEntity
 pMaterialGroup
 pMeshGroupName
@@ -29750,7 +29720,6 @@ pTagName
 pTarget1
 pTarget2
 pTargetAttachmentName
-pThO
 pU>\AL
 pValue
 p\rP!0
@@ -29950,7 +29919,6 @@ pbeWithSHA1And40BitRC2-CBC
 pbeWithSHA1And40BitRC4
 pbeWithSHA1AndDES-CBC
 pbeWithSHA1AndRC2-CBC
-pbpQ
 pcPathLengthConstraint
 pearlescent
 pedestal display model
@@ -30002,12 +29970,12 @@ phys
 phys_ballsocket
 phys_constraint
 phys_genericconstraint
-phys_hinge
 phys_hinge_local
 phys_keepupright
 phys_lengthconstraint
 phys_magnet
 phys_motor
+phys_pulleyconstraint
 phys_ragdollconstraint
 phys_ragdollmagnet
 phys_slideconstraint
@@ -30553,7 +30521,6 @@ rX&O0
 rZ1VwGf5
 rZPM
 r\vDi
-r\vpThO
 rad2deg
 radio.go
 radio.letsgo
@@ -33182,7 +33149,6 @@ volume_scale
 volumematcheseventramp
 vote
 vote_cast
-vote_controller
 vote_option
 vote_options
 vote_phase_length
@@ -33198,7 +33164,6 @@ vzcrR
 w+Ce
 w-g2
 w0A4k
-w8#o
 w8i_q
 w=Zk
 w?6r
@@ -33689,6 +33654,5 @@ zz2K
 ~P2T
 ~R65Fu
 ~jLRG
-~pyT
 ~w]UG
 ~yhZ

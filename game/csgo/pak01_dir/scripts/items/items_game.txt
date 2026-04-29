@@ -113199,6 +113199,7 @@
 				"ui_order"		"2"
 				"callout"		"#CSGO_set_train_2025_short"
 				"ui_image_thumbnail"		"backgrounds/xpshop/set_train_2025_thumbnail"
+				"limited_until"		"1776733200"
 				"ui_show_new_tag"		"1746082800"
 			}
 			"operational_point_redeemable"
@@ -113216,6 +113217,7 @@
 				"ui_order"		"2"
 				"callout"		"#CSGO_set_realism_camo_short"
 				"ui_image_thumbnail"		"backgrounds/xpshop/set_realism_camo_thumbnail"
+				"limited_until"		"1776733200"
 			}
 			"operational_point_redeemable"
 			{
@@ -113298,6 +113300,7 @@
 				"ui_image_thumbnail"		"backgrounds/xpshop/sugarface2_thumbnail"
 				"ui_set_image"		"set_sugarface2"
 				"callout"		"#CSGO_crate_sticker_pack_sugarface2_short"
+				"limited_until"		"1776733200"
 				"ui_show_new_tag"		"1761858000"
 			}
 			"operational_point_redeemable"
@@ -113308,6 +113311,7 @@
 				"ui_image_thumbnail"		"backgrounds/xpshop/stkr_craft_01_thumbnail"
 				"ui_set_image"		"set_stkr_craft_01"
 				"callout"		"#CSGO_crate_sticker_pack_stkr_craft_01_short"
+				"limited_until"		"1776733200"
 			}
 		}
 	}

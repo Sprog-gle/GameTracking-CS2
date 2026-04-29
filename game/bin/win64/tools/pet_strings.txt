@@ -7674,7 +7674,6 @@ RGBA\t%1\t%2\t%3\t%4
 RMouse
 RMouseDoubleClick
 ROTATION
-RSDS(N
 RW?restore@QPainter@@QEAAXXZ
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
@@ -9010,13 +9009,14 @@ _not_pickable
 _toolsautosave
 _volumeatlas_
 _wjb
-`1Zv
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QIntValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegularExpressionValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?value@QColor@@QEBAHXZ
 `?valueF@QColor@@QEBANXZ
+`MYv
 `Q?lightnessF@QColor@@QEBANXZ
+`QZv
 `W?rgba@QColor@@QEBAIXZ
 `\r?entryInfoList@QDir@@QEBA?AV?$QList@VQFileInfo@@@@V?$QFlags@W4Filter@QDir@@@@V?$QFlags@W4SortFlag@QDir@@@@@Z
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
@@ -10391,6 +10391,7 @@ userEdit
 v=Kv
 vForward
 vIK \f3
+vJKnJ
 vValue
 v\v?eventFilter@QAbstractScrollArea@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 valAsText
