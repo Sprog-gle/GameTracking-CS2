@@ -11940,6 +11940,7 @@ Toggle enabling/disabling the destructible parts system for debug.
 Toggle prop debug mode. If on, props will show colorcoded bounding boxes. Red means ignore all damage. White means respond physically to damage but never break. Green maps health in the range of 100 down to 1.
 Toggle the in-game script debug features
 Toggle the server pause state.
+Toggle the use of dotted/dashed debugoverlay lines to indicate source
 Toggle the visibility of the spectator bindings.
 Toggle the voice_modenable convar.
 Toggle visibility of first person weapon tracers
@@ -14597,6 +14598,7 @@ debug_visibility_monitor
 debugoverlay_cycle_domain
 debugoverlay_cycle_state
 debugoverlay_dashboard
+debugoverlay_enable_dotted_dashed
 debugoverlay_force_respect_ttl
 debugoverlay_hide_imgui
 debugoverlay_show_text_outline
@@ -19230,7 +19232,6 @@ m_bTestOcclusion
 m_bTestYesOrNoPath
 m_bThinkDangerous
 m_bThinking
-m_bThirdpersonActiveWeaponCanSafelyOcclude
 m_bThreadsActive
 m_bThrowAnimating
 m_bThrownByPlayer
@@ -19374,6 +19375,7 @@ m_bUserFriendlyNameSealed
 m_bUserSpecifiedColor
 m_bUserSpecifiedMaterialGroup
 m_bUsesBakedShadowing
+m_bUsingGroundTopologyOffset
 m_bValid
 m_bValue
 m_bValueBoolean
@@ -22128,6 +22130,7 @@ m_flUseFrictionStashedSpeedUntilFrac
 m_flUseLockedTime
 m_flUseRange
 m_flUserSpecifiedTime
+m_flUsingGroundTopologyOffsetTransitionSmoothing
 m_flUvDensity
 m_flVHeightSrc
 m_flVPhysicsUpdateLocalTime
@@ -22399,8 +22402,6 @@ m_groupBoundingBoxMaxsOpvar
 m_groupBoundingBoxMinsOpvar
 m_groupName
 m_groups
-m_gtLastTimeInAir
-m_gtLastTimeOnStaticWorldGround
 m_hAbility
 m_hActivator
 m_hActiveCommentaryNode
@@ -22905,6 +22906,7 @@ m_iMinWind
 m_iModelDisplayFlags
 m_iMoneyEarnedForNextRound
 m_iMoneySaved
+m_iMostConnected
 m_iMostRecentTeamNumber
 m_iMusicKitID
 m_iMusicKitMVPs

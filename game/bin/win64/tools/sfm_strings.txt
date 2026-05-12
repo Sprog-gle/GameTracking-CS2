@@ -44,7 +44,11 @@
  (%lu = 0x%lx)\n
  (%u = 0x%x)\n
  (08@HPX`j
+ (08@HPXbP
  (08@HPZ
+ (08@HRP
+ (08@JP
+ (0X`hpzP
  (repeat)
  (x2 - stereoscopic)
  * Animation Stack %s Layer %s - %s\n
@@ -3567,13 +3571,15 @@ $prefix_element$
 000000000
 0123456789
 08@HR
+08@JP
+0DBu
 0L6?
 0\fE04_
-0lFu
-0vD:u
+0dLu
 0x%1
 0x%llx
 0x%p = %s '%s'
+0x%u
 1 control locked to %1
 1 item
 1"?updateGeometry@QWidget@@QEAAXXZ
@@ -4000,6 +4006,8 @@ $prefix_element$
 2\n?doItemsLayout@QListView@@UEAAXXZ
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
+2\vpDBu
+2\vpdLu
 2aboutToHide()
 2aboutToShow()
 2accepted()
@@ -6494,8 +6502,7 @@ $prefix_element$
 ?waitForFinished@QProcess@@QEAA_NH@Z
 ?waitForReadyRead@QProcess@@UEAA_NH@Z
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
-@08ND:u
-@HPX`hv0
+@08N
 @Integer overflow in %s
 @\n?document@QPlainTextEdit@@QEBAPEAVQTextDocument@@XZ
 @\tV_isinfd
@@ -6503,7 +6510,6 @@ $prefix_element$
 @control_point
 @fff>fff>fff>fff>
 @merged
-@nD:u
 @spawn
 A picker dialog is active
 A string associated with this Cursor, to use later for remote Kill or Wait requests. Cursors can have any number of Tags associated with them.
@@ -10520,11 +10526,14 @@ OverridingFrameRate
 Overwrite
 Overwrite With Current
 P'?SetBoolProp@FbxIOSettings@fbxsdk@@QEAAXPEBD_N@Z
+P08@JP
 P08J
-P08ND:u
+P08N
 P4 Operation failed
 P4InteractionDialog
 P4OpenFilesDialog
+P6px
+P8+u
 P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextBlock@@QEBA_NXZ
 P?isVisible@QTextBlock@@QEBA_NXZ
@@ -10535,6 +10544,7 @@ P?jumpToNextImage@QImageReader@@QEAA_NXZ
 P?keyboardModifiers@QGuiApplication@@SA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
 P?yX(
 PASSABLE
+PDBu
 PHONEME_EXTRACTOR_001
 PK?J{
 POISONED 
@@ -10641,7 +10651,6 @@ PitchCameraUp
 PivotPaint
 PixarLog
 Pixel Dimensions
-PlFu
 PlanarConfiguration
 Planarconfig tag value assumed incorrect, assuming data is contig instead of chunky
 Play
@@ -10759,6 +10768,7 @@ Pulse domain which enables particle content to query leaf code to introspect gam
 Pulse: %s 
 PulseRequirementName
 Put; voiceless alveolar stop
+Px%u
 Python (*.py);;All Files (*.*)
 Q?load@QPixmap@@QEAA_NAEBVQString@@PEBDV?$QFlags@W4ImageConversionFlag@Qt@@@@@Z
 QAbstractButton*
@@ -10896,9 +10906,11 @@ RMouse
 RMouseDoubleClick
 RW?restore@QPainter@@QEAAXXZ
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
+R\fpdLu
+R\n0DBu
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
-R\vplFu
+R\vpDBu
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 R_T5Y
 Rad2 Deg
@@ -12741,6 +12753,11 @@ ZoomOutFromClip
 \f\n?deselect@QLineEdit@@QEAAXXZ
 \f\r?heightForWidth@QFormLayout@@UEBAHH@Z
 \f\t?beginReadArray@QSettings@@QEAAHAEBVQString@@@Z
+\fpDBu
+\fp\vPx%u
+\fp\v`DBu
+\fp\v`\n0DBu
+\fp\v`dLu
 \game\
 \n ?textValue@QInputDialog@@QEBA?AVQString@@XZ
 \n,?sReflection@FbxSurfaceMaterial@fbxsdk@@2PEBDEB
@@ -12800,7 +12817,6 @@ ZoomOutFromClip
 \n?editorDestroyed@QAbstractItemView@@MEAAXPEAVQObject@@@Z
 \n?editorEvent@QItemDelegate@@MEAA_NPEAVQEvent@@PEAVQAbstractItemModel@@AEBVQStyleOptionViewItem@@AEBVQModelIndex@@@Z
 \n?editorEvent@QStyledItemDelegate@@MEAA_NPEAVQEvent@@PEAVQAbstractItemModel@@AEBVQStyleOptionViewItem@@AEBVQModelIndex@@@Z
-\nPlFu
 \n\r?heightForWidth@QBoxLayout@@UEBAHH@Z
 \n\tV_atanf
 \nfinished rendering %d frames\n
@@ -12846,7 +12862,8 @@ ZoomOutFromClip
 \rO?initPainter@QPaintDevice@@MEBAXPEAVQPainter@@@Z
 \r\f?focusInEvent@QLineEdit@@MEAAXPEAVQFocusEvent@@@Z
 \r\r?heightForWidth@QGridLayout@@UEBAHH@Z
-\recq
+\rp\f`\v0DBu
+\rp\f`\vPDBu
 \t??8FbxMatrix@fbxsdk@@QEBA_NAEBV01@@Z
 \t?addPixmap@QIcon@@QEAAXAEBVQPixmap@@W4Mode@1@W4State@1@@Z
 \t?addRoundedRect@QPainterPath@@QEAAXNNNNNNW4SizeMode@Qt@@@Z
@@ -12946,7 +12963,9 @@ ZoomOutFromClip
 \vFu?6
 \vS?moveTo@QPainterPath@@QEAAXNN@Z
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
-\vplFu
+\vpDBu
+\vpdLu
+\vpx%u
 ]?sharedPainter@QPaintDevice@@MEBAPEAVQPainter@@XZ
 ]?staticMetaObject@QWindow@@2UQMetaObject@@B
 ]\r?horizontalOffset@QListView@@MEBAHXZ
@@ -12997,18 +13016,17 @@ _scale
 _to_curve_
 _volumeatlas_
 _wjb
+`6pz
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QIntValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegExpValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegularExpressionValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?value@QColor@@QEBAHXZ
 `?valueF@QColor@@QEBANXZ
+`DBu
 `Q?lightnessF@QColor@@QEBANXZ
-`\rP\f0lFu
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
-`fD:u
-`lFu
-`nD:u
+`dLu
 a1?I.
 a:fulltype
 a:typeparam
@@ -13016,7 +13034,6 @@ a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
 a?x@QMouseEvent@@QEBAHXZ
 a?y@QMouseEvent@@QEBAHXZ
-aBvD:u
 aC=H
 aTR>7
 aZure : voiced postalveolar fricative
@@ -13669,7 +13686,6 @@ f ?topLevelItemCount@QTreeWidget@@QEBAHXZ
 f5?B>
 fAther : low back unrounded vowel
 fAther : low front unrounded vowel
-fD:u
 fEEl : high front unrounded vowel
 fIll : high central unrounded vowel
 fIll : semi-high front unrounded vowel
@@ -14153,6 +14169,7 @@ horizontal_header_labels
 host_syncfps
 houdini
 hours
+hpzP
 http://beta.steamcommunity.com
 http://localhost/community
 http://steamcommunity.com
@@ -14625,7 +14642,6 @@ nBlendIndex
 nCentralDirectoryEntries_ThisDisk
 nCentralDirectoryEntries_Total
 nColumn
-nD:u
 nDataSize > 0
 nDelayInMS
 nDenominator
@@ -14776,9 +14792,9 @@ overrideShutterSpeedValue
 ownerelement
 ownerlog
 p"?value@QSpinBox@@QEBAHXZ
-p08@H^D:u
+p08@H^
 p4win
-p>D:u
+p8+u
 p?L7
 p?X94<
 p?vO
@@ -14787,6 +14803,7 @@ pCamera
 pCheckpointName
 pClip
 pCurrentFocusWidget
+pDBu
 pDescription
 pEt : lower-mid front unrounded vowel
 pEvent
@@ -14805,6 +14822,7 @@ pTreeView
 pV?read@QImageReader@@QEAA?AVQImage@@XZ
 pWidget
 p\n?dragLeaveEvent@QAbstractItemView@@MEAAXPEAVQDragLeaveEvent@@@Z
+p\r`\fPDBu
 p\v?event@QWidget@@MEAA_NPEAVQEvent@@@Z
 p`?type@QStandardItem@@UEBAHXZ
 pack_color_channel
@@ -14833,6 +14851,7 @@ path_node_trajectory
 path_particle_rope
 path_trajectory
 pattern
+pdLu
 per-camera settings
 permitresponses
 pet_preview_gravity
@@ -14851,14 +14870,12 @@ pivotOffset
 pixelAspectRatio
 pixels
 pixels/inches
-plFu
 playSoundButton
 playbackClampFrameCount
 playback_time
 playdemo %1\ndemo_goto %2 pause\ndemo_resume; %3 %4\n
 player view setup not available!\n
 playoverscript
-pnD:u
 point
 point_light
 point_template
@@ -14934,6 +14951,7 @@ pulse_node_custom_attributes
 pulse_open_graph_id %u %u
 pulse_runtime_lib
 pvTarget
+px%u
 python
 q\n?dragLeaveEvent@QAbstractScrollArea@@MEAAXPEAVQDragLeaveEvent@@@Z
 q\v?currentTime@QTime@@SA?AV1@XZ
@@ -14946,7 +14964,8 @@ quaternion_array
 quiet
 r>TR'>O
 rQ?lineTo@QPainterPath@@QEAAXNN@Z
-r\fplFu
+r\vpDBu
+r\vpdLu
 r_dota_wind_min_high_freq_strength
 rad2deg
 radius of the sfm skeleton display
@@ -15521,7 +15540,6 @@ user_animations
 usesLaggedValues
 uses_lagged_values
 v>^KH
-vD:u
 vForward
 vIK \f3
 vO^?KY
